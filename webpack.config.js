@@ -32,5 +32,9 @@ module.exports = {
       filename: 'style.css',
       chunkFilename: '[name].css'
     })
-  ]
+  ],
+  devServer: {
+    host: 'localhost',
+    port: '3000' 
+  }
 }
