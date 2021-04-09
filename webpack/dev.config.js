@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: { index: path.resolve(__dirname,'src','index.js') },
+  entry: { index: path.resolve(__dirname,'../src','index.js') },
   mode: 'development',
   module: {
     rules: [
@@ -25,8 +25,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'React Webpack template',
-      template: path.resolve(__dirname, 'static', 'index.html'),
-      favicon: path.resolve(__dirname, 'static', 'favicon.ico')
+      template: path.resolve(__dirname, '../static', 'index.html'),
+      favicon: path.resolve(__dirname, '../static', 'favicon.ico')
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
