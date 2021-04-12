@@ -4,15 +4,6 @@ a template for making a bare-bones webpack react app.
 
 `npm i` to install node dependencies
 
-`npm run dev` to build dev dist
+`npm run dev` to serve the app on local host port 3000 in dev mode
 
-`npm start` to serve the app
-
-### #TODO
-- production webpack config
-- customize dev server (port and host) - put in an env file??
-- make scripts to serve it with prod and dev configs
-- integrate `cross-env`
-
-### research
-- how to customize the names of the chuncks that are served (`optimization.splitChunks`)/does it matter?
+`npm run build` for production build
